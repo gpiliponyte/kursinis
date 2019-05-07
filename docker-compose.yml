@@ -1,0 +1,15 @@
+version: '3'
+services:
+  latex:
+    image: "marsas/basic_latex_docker"
+    environment:
+      - BRANCH
+      - TRAVIS_PULL_REQUEST_BRANCH
+      - TRAVIS_BRANCH
+      - TRAVIS_COMMIT
+      - GDRIVE_REFRESH_TOKEN
+      - GDRIVE_DIR
+    command: >
+      bash -c "cd /data/config && compile && upload"
+    volumes:
+      - ./:/data
