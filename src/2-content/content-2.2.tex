@@ -1,0 +1,26 @@
+\subsection{Priklausomybių versijų pasirinkimas NPM sistemoje}
+
+Norint naudotis NPM priklausomybėmis, projekte būtina turėti package.json failą. Šį failą
+sudaro projekto meta-data, tarp kurios nurodomos ir reikiamos priklausomybės bei jų versijos. Package.json
+faile išskirtos dvi priklausomybių grupės - \enquote{dependencies} (projekto priklausomybės) bei \enquote{devDependencies}
+(projekto kūrimui ir testavimui reikalingos priklausomybės). Kiekvienai šiame faile nurodytai priklausomybei nurodoma ir jos versija \textsuperscript{[GAU18]}.
+NPM leidžia nurodyti ne tik tikslias priklausomybių versijas, bet ir leidžiamų versijų diapazoną.
+Tildės ženklas (~) leidžia naujesnes pataisymų (ang. patch) versijas,
+stogelio ženklas (\textasciicircum) leidžia naujesnes antraeiles (ang. minor) arba pataisymų (ang. patch) versijas \textsuperscript{[PIT15]}.
+
+
+Galimybė package.json faile esančioms priklausomybėms suteikti leistinų versijų diapazoną turi privalumų ir trūkumų.
+Šis metodas leidžia vartotojui patogiau atnaujinti turimas priklausomybes - įvykdžius
+\enquote{npm update} komandą automatiškai gaunamos naujausios leistinos priklausomybių versijos vartotojui net
+nekeitus package.json \textsuperscript{[PIT15]}. Šio metodo trūkumas yra, jog nurodant leistinų priklausomybių versijų ribas,
+dirbant komandoje nėra galimybės užtikrinti, jog įvykdžius \enquote{npm install} su tuo pačiu package.json bus gautos
+tų pačių versijų priklausomybės \textsuperscript{[PIT15]}. Išlaikyti stabilias priklausomybių versijas projekte yra svarbu norint
+užtikrinti stabilų programos surinkimą (ang. stable build) - jei naujausioje priklausomybės versijoje būtų
+klaida, projektas veiktų klaidingai arba visai neveiktų.
+
+Norint išspręsti nestabilaus programos surinkimo problemą, NPM 5 versijoje pradedamas naudoti
+package-lock.json failas. Šis failas nurodo tikslų priklausomybių medį - visų naudojamų priklausomybių,
+bei šių priklausomybių priklausomybių tikslias versijas \textsuperscript{[NPMc]}. Package-lock.json generuojamas automatiškai pakeitus priklausomybių medį
+arba package.json failą \textsuperscript{[NPMc]}. Atsiradus package-lock.json failui, NPM sistema vadovaujasi šiuo failu siųsdama priklausomybes.
+Kadangi package-lock.json įrašomos tikslios priklausomybių versijos, išsprendžiama problema,
+jog kartu dirbantiems kolegoms ar CI/CD serveriui atsiunčiamos netinkamų versijų priklausomybės.
