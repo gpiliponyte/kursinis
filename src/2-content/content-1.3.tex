@@ -5,12 +5,12 @@ nežinojimas apie valdomų paketų versijas.
 Senoji „go get“ komanda turėjo du priklausomybių versijų pasirinkimo algoritmus.
 Pirmasis, Go numatytasis algoritmas, „go get B“ metu atsiųsdavo naujausią paketo B versiją
 bei naujausias B priklausomybes, kurių nebuvo turima lokaliai. Antrasis algoritmas įvykdžius „go get -u B“
-atsiųsdavo naujausią B, bei visas naujausias jos tranzityvių priklausomybių versijas \textsuperscript{[COX18d]}.
+atsiųsdavo naujausią B, bei visas naujausias jos tranzityvių priklausomybių versijas \cite{COX18d}.
 
 Abu šie algoritmai netenkino vartotojų bei kėlė daug klaidų. Naudojant pirmąjį algoritmą,
 kilo grėsmė, jog lokaliai turimos priklausomybės bus per senos ir neveiks su naujai atsiųstomis
 priklausomybėmis. Antrasis algoritmas taip pat nebuvo visiškai saugus, nes buvo galimybė,
-jog naujausios priklausomybių versijos nebus tarpusavyje sutapatinamos (ang. compatible) \textsuperscript{[COX18e]}.
+jog naujausios priklausomybių versijos nebus tarpusavyje sutapatinamos (ang. compatible) \cite{COX18e}.
 
 %\begin{figure}[H]
 %    \centering
@@ -23,12 +23,12 @@ Go inžinieriai į pasiūlymą dėl version-aware Go komandos įtraukė ir nauj�
 versijų pasirinkimui. Šis algoritmas vadinasi „minimal version selection“ ir siūlo lyg šiol mažai naudotą
 priklausomybių versijų pasirinkimo mechanizmą - pasirinkti seniausią leidžiamą paketo versiją.
 Dauguma šiuolaikinių priklausomybių valdymo sistemų, tokių kaip dep ar cargo, naudoja priešingą algoritmą -
-renkasi naujausią leidžiamą priklausomybės versiją \textsuperscript{[COX18a, COX18f]}.
+renkasi naujausią leidžiamą priklausomybės versiją \cite{COX18a} \cite{COX18f}.
 
 Russ Cox, vienas pagrindinių Go kūrėjų, teigia, cargo bei dep naudojamas algoritmas yra klaidingas
 dėl dviejų priežasčių. Pirmoji priežastis yra tai, jog naujausia leidžiama versija gali nuolat kisti
 bei būti nestabili, antroji - klaidos atveju vartotojui reikia skirti papildomo
-laiko uždrausti naudoti specifinių versijų priklausomybes \textsuperscript{[COX18a]}.
+laiko uždrausti naudoti specifinių versijų priklausomybes \cite{COX18a}.
 
 %\begin{figure}[H]
 %    \centering
@@ -39,10 +39,10 @@ laiko uždrausti naudoti specifinių versijų priklausomybes \textsuperscript{[C
 Go inžinierių pasirinktas „minimal version selection“ algoritmas turi kelis pranašumus.
 Šis algoritmas užtikrina, jog visada su ta pačia „go get“ komanda bus gaunamos tų pačių versijų priklausomybes.
 Garantija, jog projekto priklausomybės nesikeis, leidžia užtikrinti, jog programos surinkimo rezultatas visada bus toks pats,
-tiek programų sistemos kūrimo metu, tiek sistemos produkcinėje aplinkoje \textsuperscript{[COX18a]}. „Minimal version selection“ taip pat
+tiek programų sistemos kūrimo metu, tiek sistemos produkcinėje aplinkoje \cite{COX18a}. „Minimal version selection“ taip pat
 leidžia apsisaugoti nuo naujausiose paketų versijose galinčių būti klaidų - jei paketo A naujausiose versijoje yra klaida,
 tiek A paketo autorius, tiek kitų paketų, naudojančių A, autoriai turi laiko ištaisyti klaidą bei
-uždrausti naudoti šią trikį turinčią versiją \textsuperscript{[COX18e]}.
+uždrausti naudoti šią trikį turinčią versiją \cite{COX18e}.
 
 %\begin{figure}[H]
 %    \centering

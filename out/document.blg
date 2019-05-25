@@ -1,9 +1,16 @@
 [0] Config.pm:340> INFO - This is Biber 2.4
 [0] Config.pm:343> INFO - Logfile is '/data/out/document.blg'
-[29] biber:287> INFO - === Sun May 12, 2019, 16:59:39
-[97] Biber.pm:348> INFO - Reading '/data/out/document.bcf'
-[200] Biber.pm:742> INFO - Found 0 citekeys in bib section 0
-[201] Utils.pm:147> WARN - The file '/data/out/document.bcf' does not contain any citations!
-[209] bbl.pm:519> INFO - Writing '/data/out/document.bbl' with encoding 'UTF-8'
-[211] bbl.pm:615> INFO - Output to /data/out/document.bbl
-[213] Biber.pm:109> INFO - WARNINGS: 1
+[29] biber:287> INFO - === Sat May 25, 2019, 12:28:33
+[99] Biber.pm:348> INFO - Reading '/data/out/document.bcf'
+[204] Biber.pm:742> INFO - Found 20 citekeys in bib section 0
+[212] Biber.pm:3151> INFO - Processing section 0
+[233] Biber.pm:3308> INFO - Looking for bibtex format file 'bibliografija.bib' for section 0
+[249] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[260] bibtex.pm:974> INFO - Found BibTeX data source 'bibliografija.bib'
+[365] Utils.pm:147> WARN - BibTeX subsystem: /tmp/NLA2bnpIga/bibliografija.bib_10.utf8, line 3, warning: 148 characters of junk seen at toplevel
+[485] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[486] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[487] Biber.pm:3028> INFO - Sorting list 'anyt/global' of type 'entry' with scheme 'anyt' and locale 'lt-LT'
+[511] bbl.pm:519> INFO - Writing '/data/out/document.bbl' with encoding 'UTF-8'
+[548] bbl.pm:615> INFO - Output to /data/out/document.bbl
+[550] Biber.pm:109> INFO - WARNINGS: 1

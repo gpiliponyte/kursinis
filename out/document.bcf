@@ -2052,6 +2052,44 @@
     <bcf:datasource type="file" datatype="bibtex">bibliografija.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">PAD17</bcf:citekey>
+    <bcf:citekey order="2">PAD17</bcf:citekey>
+    <bcf:citekey order="3">MAT17</bcf:citekey>
+    <bcf:citekey order="4">MAT17</bcf:citekey>
+    <bcf:citekey order="5">PAD17</bcf:citekey>
+    <bcf:citekey order="6">COX18a</bcf:citekey>
+    <bcf:citekey order="7">COX18a</bcf:citekey>
+    <bcf:citekey order="8">COX18b</bcf:citekey>
+    <bcf:citekey order="9">GOLANG19</bcf:citekey>
+    <bcf:citekey order="10">COX18c</bcf:citekey>
+    <bcf:citekey order="11">COX18d</bcf:citekey>
+    <bcf:citekey order="12">COX18d</bcf:citekey>
+    <bcf:citekey order="13">COX18c</bcf:citekey>
+    <bcf:citekey order="14">COX18d</bcf:citekey>
+    <bcf:citekey order="15">COX18e</bcf:citekey>
+    <bcf:citekey order="16">COX18a</bcf:citekey>
+    <bcf:citekey order="17">COX18f</bcf:citekey>
+    <bcf:citekey order="18">COX18a</bcf:citekey>
+    <bcf:citekey order="19">COX18a</bcf:citekey>
+    <bcf:citekey order="20">COX18e</bcf:citekey>
+    <bcf:citekey order="21">NPMa</bcf:citekey>
+    <bcf:citekey order="22">NPMb</bcf:citekey>
+    <bcf:citekey order="23">GAU18</bcf:citekey>
+    <bcf:citekey order="24">PIT15</bcf:citekey>
+    <bcf:citekey order="25">PIT15</bcf:citekey>
+    <bcf:citekey order="26">PIT15</bcf:citekey>
+    <bcf:citekey order="27">NPMc</bcf:citekey>
+    <bcf:citekey order="28">NPMc</bcf:citekey>
+    <bcf:citekey order="29">MAVENa</bcf:citekey>
+    <bcf:citekey order="30">MAVENb</bcf:citekey>
+    <bcf:citekey order="31">MAVENc</bcf:citekey>
+    <bcf:citekey order="32">MAVENb</bcf:citekey>
+    <bcf:citekey order="33">MAVENd</bcf:citekey>
+    <bcf:citekey order="34">MAVENd</bcf:citekey>
+    <bcf:citekey order="35">MAVENd</bcf:citekey>
+    <bcf:citekey order="36">MAVENd</bcf:citekey>
+    <bcf:citekey order="37">ORACLEa</bcf:citekey>
+    <bcf:citekey order="38">LIG18</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="anyt/global" type="entry" sortscheme="anyt" sortnamekeyscheme="global">
   <bcf:sorting>

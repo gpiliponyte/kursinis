@@ -1,3 +1,11 @@
+\section{Priklausomybių valdymo sistemos}
+
+\input{\SRCPATH/2-content/content-0.1}
+
+%\input{\SRCPATH/2-content/content-0.2}
+
+\input{\SRCPATH/2-content/content-0.3}
+
 \section{Go kalbos priklausomybių valdymo sistema}
 
 Go programavimo kalboje (dar žinomoje kaip Golang), numatytasis priklausomybių valdymo įrankis yra „go get“
@@ -13,7 +21,7 @@ Ateinančiuose skyriuose aptariami naujausi „go get“ pokyčiai ir šių poky
 \section{NPM priklausomybių valdymo sistema}
 
 NPM yra priklausomybių valdymo sistema, naudojama JavaScript aplikacijose.
-Ši sistema turi didžiausią priklausomybių registrą pasaulyje, ja naudojantis galima atsisiųsti paketus arba Node modulius.\textsuperscript{[NPMa]}.
+Ši sistema turi didžiausią priklausomybių registrą pasaulyje, ja naudojantis galima atsisiųsti paketus arba Node modulius.\cite{NPMa}.
 
 \input{\SRCPATH/2-content/content-2.1}
 
@@ -21,19 +29,25 @@ NPM yra priklausomybių valdymo sistema, naudojama JavaScript aplikacijose.
 
 \section{Maven priklausomybių valdymo sistema}
 
-Apache Maven yra daugiausiai Java projektams naudojama priklausomybių valdymo sistema \textsuperscript{[MAVENa]}.
+Apache Maven yra daugiausiai Java projektams naudojama priklausomybių valdymo sistema \cite{MAVENa}.
 Naudojant Maven projekte būtinas pom.xml failas, kuriame nurodomos norimos priklausomybės ir jų versijos.
 Maven priklausomybės yra vadinamos artefaktais - tai dažniausiai .jar tipo failai, įkelti į Maven repozitoriją.
 Pom.xml norimi artefaktai apibūdinami nurodant artefakto groupId, artifactId, version, kartu vadinamus artefakto
-koordinatėmis \textsuperscript{[MAVENb]}. Maven Central repozitorija yra numatytoji vieta ieškoti
+koordinatėmis \cite{MAVENb}. Maven Central repozitorija yra numatytoji vieta ieškoti
 priklausomybėms, tačiau pom.xml galima pridėti ir kitų repozitorijų (pavyzdžiui,
-kompanijų privačias repozitorijas), iš kurių bus siunčiamos priklausomybės \textsuperscript{[MAVENc]}.
+kompanijų privačias repozitorijas), iš kurių bus siunčiamos priklausomybės \cite{MAVENc}.
 
 Maven taip pat palaiko daugiamodulininius (ang. multi-module) projektus, turinčius tėvinį
 modulį su šakniniu (ang. root) pom.xml, bei vaikinius modulius su savo pom.xml paveldinčiais priklausomybes
-iš tėvinio modulio \textsuperscript{[MAVENb]}. Tai palengvina pom.xml failų palaikymą.
+iš tėvinio modulio \cite{MAVENb}. Tai palengvina pom.xml failų palaikymą.
 
 \input{\SRCPATH/2-content/content-3.1}
+
+\input{\SRCPATH/2-content/content-3.2}
+
+\section{Aptartų priklausomybių valdymo sistemų palygimas}
+
+\input{\SRCPATH/2-content/content-4.1}
 
 
 %\section{Priklausomybių valdymo sistemų analizė}

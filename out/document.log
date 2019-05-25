@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.1.22)  12 MAY 2019 16:59
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.1.22)  25 MAY 2019 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1050,7 +1050,13 @@ Package biblatex Info: ... file 'lithuanian.lbx' found.
 (./lithuanian.lbx
 File: lithuanian.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)$Id: lithu
 anian.lbx,v 1.0 2015/02/05 20:21:28 niekas stable $
-) (/data/out/document.aux)
+) (/data/out/document.aux
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
+))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -1217,71 +1223,54 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] (../src/main.tex (../src/1-intro.tex)
 (../src/2-content/main.tex [3
 
+] (../src/2-content/content-0.1.tex)
+(../src/2-content/content-0.3.tex) [4
+
 ] (../src/2-content/content-1.1.tex)
 (../src/2-content/content-1.2.tex
-File: semantic_import_versioning.png Graphic file (type QTm)
- <use  "semantic_import_versioning.png" >
-[4
+File: imp_semver2.png Graphic file (type QTm)
+ <use  "imp_semver2.png" > [5
 
-]) (../src/2-content/content-1.3.tex [5]) [6]
-(../src/2-content/content-2.1.tex) (../src/2-content/content-2.2.tex) [7
+])
+(../src/2-content/content-1.3.tex [6]) [7] (../src/2-content/content-2.1.tex)
+(../src/2-content/content-2.2.tex) [8
+
+] [9] (../src/2-content/content-3.1.tex
+File: mavenv2.png Graphic file (type QTm)
+
+<use  "mavenv2.png" > [10
+
+]) (../src/2-content/content-3.2.tex [11]) [12]
+(../src/2-content/content-4.1.tex)) (../src/3-results.tex [13
+
+])) [14
 
 ]
-[8] (../src/2-content/content-3.1.tex) [9
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 86.
 
-]) (../src/3-results.tex [10])
-(../src/4-sources.tex [11
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-[]\EU1/Palemonas(0)/m/n/12 - Russ Cox, \EU1/Palemonas(0)/m/it/12 cmd/go: add pa
-ckage version support to Go toolchain\EU1/Palemonas(0)/m/n/12 ,
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Underfull \hbox (badness 1430) in paragraph at lines 86--86
+[]\EU1/Palemonas(0)/m/n/12 Arvind Padmanabhan. Dependency manager, $[][][][][] 
+[] [] [] [][][][][][][][][] [] [][][] []
  []
 
+[15
 
-Overfull \hbox (90.34933pt too wide) in paragraph at lines 7--8
-[]\EU1/Palemonas(0)/m/n/12 - Russ Cox, \EU1/Palemonas(0)/m/it/12 Proposal: Vers
-ioned Go Modules\EU1/Palemonas(0)/m/n/12 , https://go.googlesource.com/proposal
-/+/master/design/24301-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
-[]\EU1/Palemonas(0)/m/n/12 - Shardendu Kumar Gautam, \EU1/Palemonas(0)/m/it/12 
-Why package.json? | npm basics\EU1/Palemonas(0)/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
-\EU1/Palemonas(0)/m/n/12 https://medium.com/beginners-guide-to-mobile-web-devel
-opment/why-package-
- []
-
-
-Overfull \hbox (71.14093pt too wide) in paragraph at lines 20--25
-[]\EU1/Palemonas(0)/m/n/12 - \EU1/Palemonas(0)/m/it/12 Introduction to the Depe
-ndency Mechanism\EU1/Palemonas(0)/m/n/12 , https://maven.apache.org/guides/intr
-oduction/introduction-
- []
-
-))
-
-LaTeX Warning: Empty bibliography on input line 86.
-
-[12
-
-] (/data/out/document.aux)
+] [16] (/data/out/document.aux)
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 26167 strings out of 493638
- 479759 string characters out of 6146796
- 848617 words of memory out of 5000000
- 29193 multiletter control sequences out of 15000+600000
+ 26381 strings out of 493638
+ 484255 string characters out of 6146796
+ 875627 words of memory out of 5000000
+ 29388 multiletter control sequences out of 15000+600000
  16646 words of font info for 90 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 70i,12n,96p,10514b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,11n,96p,10514b,3672s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /data/out/document.pdf (12 pages).
+Output written on /data/out/document.pdf (16 pages).

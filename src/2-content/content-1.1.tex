@@ -3,7 +3,7 @@
 Nuo pat Go kalbos išleidimo 2009 metais, jos naudotojų tarpe atsirado poreikis dalintis savo, bei naudoti kitų vartotojų sukurtus paketus.
 Šiam tikslui Go inžinieriai sukūrė „GOINSTALL“ komandą, leidžiančią atsisiųsti norimus paketus iš tokių programinio kodo saugyklų kaip Github ar Bitbucket.
 Neilgai trukus „GOINSTALL“ pakeitė “go get“ komanda, tačiau abi šios komandos turėjo didžiulį trūkumą - jose nebuvo
-paketo versijos sąvokos. Tai reiškė, jog naudojant „go get“ vartotojas visada gaus naujausią šio paketo kopiją \textsuperscript{[COX18a]}.
+paketo versijos sąvokos. Tai reiškė, jog naudojant „go get“ vartotojas visada gaus naujausią šio paketo kopiją \cite{COX18a}.
 
 Negalėjimas pasirinkti paketo versijos kelia dvi pagrindines problemas.
 Pirmoji problema yra negalėjimas užtikrinti stabilaus programos surinkimo (ang. stable build),
@@ -12,9 +12,9 @@ antroji - nėra galimybių užtikrinti, kad pokyčiai naujoje paketo versijoje b
 Go priklausomybių valdymo trūkumai bandyti spręsti kopijuojant atsiųstus paketus ir laikant juos lokaliai -
 šį procesą automatizuoti sukurta daug įrankių, tokių kaip goven, godep, gb. Lokalus paketų laikymas
 išsprendė tik stabilaus programos surinkimo (ang. stable build) problemą. Priklausomybių versijų
-atgalinio suderinamumo problema vis dar nebuvo išspręsta \textsuperscript{[COX18a]}.
+atgalinio suderinamumo problema vis dar nebuvo išspręsta \cite{COX18a}.
 
 Go kalboje buvo poreikis įvesti tiesioginį paketų versijų valdymą pačioje „go get“ komandoje ir nebepasikliauti trečiųjų šalių
 įrankiais. Taip Go inžinieriai pradėjo dirbti prie Vgo - pirmojo apie priklausomybių versijas žinančios (ang. version-aware) Go
-komandos prototipo \textsuperscript{[COX18b]}. Go kalbos 1.11 versijoje pradėtas pirminis Vgo prototipe pristatytų idėjų palaikymas
-\textsuperscript{[GOLANG19]}.
+komandos prototipo \cite{COX18b}. Go kalbos 1.11 versijoje pradėtas pirminis Vgo prototipe pristatytų idėjų palaikymas
+\cite{GOLANG19}.

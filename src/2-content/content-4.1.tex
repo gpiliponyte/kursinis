@@ -1,0 +1,29 @@
+\subsection{Priklausomybių versijų pasirinkimas}
+
+Kiekviena iš darbe aptartų priklausomybių valdymo sistemų turi skirtingus priklausomybių versijų pasirinkimo metodus.
+
+Pirmoji kursiniame darbe aprašyta Go priklausomybių valdymo sistema renkasi mažiausią leidžiamą priklausomybės versiją -
+šis algoritmas vadinamas „minimal version selection“. „Minimal version selection”
+prioritetizuojamas projekto priklausomybių versijų stabilumas ir nuspėjamumas, o ne jų naujumas.
+
+Priešingai nei Go, NPM priklausomybių valdymo sistemos strategija yra (neturint package-lock.json failo)
+rinktis naujausias leidžiamas priklausomybių versijas. NPM teikia pirmenybę naujausių priklausomybių versijų
+naudojimui, net jei tai reiškia, jog sistemos vartotojas gali lengvai gauti priklausomybes su dar nežinomais trikiais.
+
+Maven priklausomybių valdymo sistema siūlo keletą strategijų priklausomybių versijoms nustatyti. Tiesioginėms priklausomybėms,
+nurodytoms projekto pom.xml faile, kaip ir NPM sistemoje naudojamas didžiausios leidžiamos versijos algoritmas.
+Tranzityvių priklausomybių versijų pasirinkimo numatytasis metodas yra priklausomybių mediacija (ang. dependency mediation),
+kuri renkasi pirmąją priklausomybės versiją, esančią priklausomybių medyje. Naudojantis priklausomybių mediacija sunku
+nuspėti, kokių versijų tranzityvios priklausomybės bus gautos, šis metodas nėra toks nuspėjamas kaip Go ar NPM sistemų.
+Priklausomybių mediacijos metu gali būti gaunamos ir per senų, ir gerokai per naujų versijų priklausomybės, todėl Maven
+naudojamas ir priklausomybių valdymo (ang. dependency management) mechanizmas, leidžiantis specifikuoti konkrečias norimų
+tranzityvių priklausomybių versijas. Šis metodas nėra patogus, nes reikalauja žinoti konkrečias norimų trazityvių priklausomybių
+versijas, tačiau jis leidžia pataisyti priklausomybių mediacijos metu padarytas klaidas. Maven taip pat turi mechanizmų
+uždrausti atsiųsti nurodytas tranzityvias priklausomybes ar jas ignoruoti iki kol bus išreikštai nurodoma jas naudoti.
+
+Apibendrinus, Go priklausomybių versijų pasirinkimo algoritmas yra saugus ir nuspėjamas, bet nėra įrašomos pačios
+naujausios priklausomybių versijos. NPM sistema leidžia patogiai gauti naujausias priklausomybių versijas, tačiau
+paaukojama dalis nuspėjamumo ir saugumo. Maven numatytasis trazityvių priklausomybių mediacijos algoritmas nėra nuspėjamas,
+todėl sistema siūlo ir priklausomybių valdymo mechanizmą, kurio metu atsiunčiamos specifikuotų versijų tranzityvios priklausomybės.
+Maven, kitaip nei NPM ir Go sistemos, suteikia galimybę vartotojui nenaudoti nurodytų tranzityvių priklausomybių,
+taip sumažinamas priklausomybių medis.

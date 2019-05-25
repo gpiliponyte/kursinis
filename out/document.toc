@@ -4,30 +4,122 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Įvadas}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.}Go kalbos priklausomybių valdymo sistema}{4}
+\contentsline {section}{\numberline {1.}Priklausomybių valdymo sistemos}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.}Priklausomybių valdymo Go kalboje istorija}{4}
+\contentsline {subsection}{\numberline {1.1.}Priklausomybių valdymo sistemų poreikis}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.}Priklausomybių versijavimas Go sistemoje}{4}
+\contentsline {subsection}{\numberline {1.2.}Nagrinėti pasirinktos priklausomybių sistemos}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.}Priklausomybių versijų pasirinkimas Go sistemoje}{5}
+\contentsline {section}{\numberline {2.}Go kalbos priklausomybių valdymo sistema}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.}NPM priklausomybių valdymo sistema}{7}
+\contentsline {subsection}{\numberline {2.1.}Priklausomybių valdymo Go kalboje istorija}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.}Priklausomybių versijavimas NPM sistemoje}{7}
+\contentsline {subsection}{\numberline {2.2.}Priklausomybių versijavimas Go sistemoje}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.}Priklausomybių versijų pasirinkimas NPM sistemoje}{7}
+\contentsline {subsection}{\numberline {2.3.}Priklausomybių versijų pasirinkimas Go sistemoje}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.}Maven priklausomybių valdymo sistema}{9}
+\contentsline {section}{\numberline {3.}NPM priklausomybių valdymo sistema}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.}Tranzityvių priklausomybių valdymas Maven sistemoje}{9}
+\contentsline {subsection}{\numberline {3.1.}Priklausomybių versijavimas NPM sistemoje}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.}Priklausomybių mediacija}{9}
+\contentsline {subsection}{\numberline {3.2.}Priklausomybių versijų pasirinkimas NPM sistemoje}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.}Priklausomybių valdymas}{9}
+\contentsline {section}{\numberline {4.}Maven priklausomybių valdymo sistema}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.3.}Pašalintos bei pasirenkamosios priklausomybės}{9}
+\contentsline {subsection}{\numberline {4.1.}Tranzityvių priklausomybių valdymas Maven sistemoje}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Rezultatai ir išvados}{11}
+\contentsline {subsubsection}{\numberline {4.1.1.}Priklausomybių mediacija}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltiniai}{12}
+\contentsline {subsubsection}{\numberline {4.1.2.}Priklausomybių valdymas}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.3.}Pašalintos bei pasirenkamosios priklausomybės}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.}Priklausomybių versijavimas Maven sistemoje}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.}Aptartų priklausomybių valdymo sistemų palygimas}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.}Priklausomybių versijų pasirinkimas}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Rezultatai ir išvados}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Šaltiniai}{15}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {lithuanian}

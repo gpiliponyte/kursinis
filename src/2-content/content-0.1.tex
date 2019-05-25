@@ -1,0 +1,22 @@
+\subsection{Priklausomybių valdymo sistemų poreikis}
+
+Programų sistemos dažnai susideda iš mažesnių, vieną paskirtį turinčių (ang. single purpose) modulių.
+Populiarėjant atvirojo programinio kodo (ang. open source) naudojimui, sistemos neretai priklauso nuo išorinių,
+kitų autorių sukurtų modulių \cite{PAD17}. Toks programinio kodo daugkartinis panaudojimas turi daug privalumų - paspartinamas programų
+sistemų kūrimo procesas, daugiau laiko skiriama fokusuojantis į unikalias kuriamos sistemos užduotis.
+
+Priklausomybių valdymo sistemos yra įrankiai, palengvinantys išorinių modulių naudojimą programų sistemose.
+Šios sistemos leidžia atsisiųsti tiesiogines projekto priklausomybes, dauguma jų taip pat turi mechanizmus gauti
+ir projekto tranzityvias priklausomybes (tiesioginių priklausomybių priklausomybes) \cite{PAD17}. Naudojant
+priklausomybių valdymo sistemas vartotojui būtina nurodyti tik norimų tiesioginių priklausomybių sąrašą,
+tinkamos tranzityvių priklausomybių versijos bei iš kokių repozitorijos jos bus siunčiamos nustatoma
+automatiškai. Priklausomybių valdymo sistemos taip pat dažnai suteikia galimybę patogiai atnaujinti individualias
+priklausomybes arba visą projekto priklausomybių medį \cite{MAT17}.
+
+Priklausomybių valdymo sistemos yra svarbios kuriant programų sistemas komandoje bei kuriamos programų
+sistemos nuolatinės integracijos bei nuolatinio tiekimo (ang. continuous integration and continuous delivery,
+trump. CI/CD) procesui. Modernios priklausomybių valdymo sistemos leidžia užtikrinti, jog visi komandos
+inžinieriai dirba su tų pačių versijų priklausomybėmis. Šios sistemos taip pat išlaiko vienodas priklausomybes
+tiek vystymo, tiek testinėse bei produkcinėje aplinkose \cite{MAT17}. Taip sumažinama su netinkamomis
+priklausomybėmis susijusių programų sistemos trikių tikimybė.
+
