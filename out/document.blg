@@ -1,16 +1,16 @@
 [0] Config.pm:340> INFO - This is Biber 2.4
 [0] Config.pm:343> INFO - Logfile is '/data/out/document.blg'
-[29] biber:287> INFO - === Sat May 25, 2019, 12:28:33
-[99] Biber.pm:348> INFO - Reading '/data/out/document.bcf'
-[204] Biber.pm:742> INFO - Found 20 citekeys in bib section 0
-[212] Biber.pm:3151> INFO - Processing section 0
-[233] Biber.pm:3308> INFO - Looking for bibtex format file 'bibliografija.bib' for section 0
-[249] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[260] bibtex.pm:974> INFO - Found BibTeX data source 'bibliografija.bib'
-[365] Utils.pm:147> WARN - BibTeX subsystem: /tmp/NLA2bnpIga/bibliografija.bib_10.utf8, line 3, warning: 148 characters of junk seen at toplevel
-[485] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[486] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[487] Biber.pm:3028> INFO - Sorting list 'anyt/global' of type 'entry' with scheme 'anyt' and locale 'lt-LT'
-[511] bbl.pm:519> INFO - Writing '/data/out/document.bbl' with encoding 'UTF-8'
-[548] bbl.pm:615> INFO - Output to /data/out/document.bbl
-[550] Biber.pm:109> INFO - WARNINGS: 1
+[35] biber:287> INFO - === Mon May 27, 2019, 18:34:31
+[110] Biber.pm:348> INFO - Reading '/data/out/document.bcf'
+[221] Biber.pm:742> INFO - Found 20 citekeys in bib section 0
+[233] Biber.pm:3151> INFO - Processing section 0
+[275] Biber.pm:3308> INFO - Looking for bibtex format file 'bibliografija.bib' for section 0
+[294] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[307] bibtex.pm:974> INFO - Found BibTeX data source 'bibliografija.bib'
+[417] Utils.pm:147> WARN - BibTeX subsystem: /tmp/6FEpwXYnzz/bibliografija.bib_11.utf8, line 3, warning: 148 characters of junk seen at toplevel
+[543] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[544] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[544] Biber.pm:3028> INFO - Sorting list 'anyt/global' of type 'entry' with scheme 'anyt' and locale 'lt-LT'
+[569] bbl.pm:519> INFO - Writing '/data/out/document.bbl' with encoding 'UTF-8'
+[614] bbl.pm:615> INFO - Output to /data/out/document.bbl
+[615] Biber.pm:109> INFO - WARNINGS: 1

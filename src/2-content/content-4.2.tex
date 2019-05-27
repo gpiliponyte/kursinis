@@ -1,0 +1,26 @@
+\subsection{Stabilių priklausomybių versijų užtikrimas}
+
+Stabilių priklausomybių išlaikymas skirtingose aplinkose yra dar viena svarbi priklausomybių valdymo sistemų
+funkcija, kurią kursiniame darbe aptartos sistemos vykdo naudodamos skirtingais metodais.
+
+Go priklausomybių valdymo sistema palaiko stabilias priklausomybes naudodama \enquote{minimal selection} algoritmą,
+kurio metu pasirenkamos mažiausių leidžiamų versijų priklausomybės. Šis metodas užtikrina, jog bus gaunamos tos
+pačios priklausomybės, nes seniausios leidžiamos priklausomybių versijos nekinta.
+
+NPM pasirenka kitą, daugelyje šiuolaikinių priklausomybių valdymo sistemų populiarų metodą - priklausomybių
+rakinimą (ang. dependency locking). Naudojant priklausomybių rakinimą, projekto “lock” faile (package-lock.json) užfiksuojamas
+visas projekto priklausomybių medis bei užtikrina, jog instaliuojant priklausomybes bus replikuojamas būtent package-lock.json
+užfiksuotas priklausomybių medis.
+
+Maven priklausomybių valdymo sistema neturi tvirtų mechanizmų, leidžiančių užtikrinti priklausomybių stabilumą.
+Sistemos vieninteliame manifest faile (pom.xml) leidžiama nurodyti ne tik konkrečias priklausomybių versijas, bet ir
+priklausomybių galimų versijų diapazoną, iš kurio naudojama naujausia. Tai reiškia, jog projekto priklausomybių medis,
+tiek vystymo, tiek produkcinėje gali būti nestabilus neatsargiam vartotojui nenurodžius konkrečių priklausomybių versijų. Vystant
+Maven projektą sunku išlaikyti stabilias priklausomybių versijas ir dėl priklausomybių mediacijos algoritmo, naudojamo gauti
+tranzityvioms projekto priklausomybėms, išreikštai nenurodytoms pom.xml failo \enquote{dependencyManagement} mazge.
+Priklausomybių mediacija naudoja priklausomybių medyje pirmą rastą priklausomybės versiją, kas reiškia,
+jog pridėjus naujas tiesines priklausomybes, gali netikėtai projekto tranzityvių priklausomybių versijos.
+
+Taigi, Go ir NPM turi savitus, tačiau patikimus stabilių priklausomybių užtikrinimo metodus, ir šiuo aspektu yra pranašesni
+už Maven. Maven sistemoje nėra saugiklių priklausomybių versijoms užtikrinti (tokių kaip NPM priklausomybių rakinimas), todėl
+neatsargūs vartotojai gali susidurti su nestabilių priklausomybių sukeltais trikiais.

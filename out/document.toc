@@ -40,9 +40,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.}Priklausomybių versijų pasirinkimas}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Rezultatai ir išvados}{14}
+\contentsline {subsection}{\numberline {5.2.}Stabilių priklausomybių versijų užtikrimas}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Šaltiniai}{15}
+\contentsline {section}{Rezultatai ir išvados}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Šaltiniai}{16}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
