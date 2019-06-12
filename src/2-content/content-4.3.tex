@@ -1,17 +1,28 @@
-%%
-%% Author: gretapiliponyte
-%% 2019-06-01
-%%
+\subsection{Priklausomybių versijavimas}
 
-% Preamble
-\documentclass[11pt]{article}
+Visos iš pasirinktų priklausomybių valdymo sistemų priklausomybių versijų sudarymą grindžia semantiniu versijavimu.
 
-% Packages
-\usepackage{amsmath}
+NPM sistema naudoja tradicinį semantinį versijavimą, kuomet priklausomybės versija nurodoma trimis skaičiais x.y.z
+(x - pagrindinė (ang. major) versija, y - antraeilė (ang. minor) versija, z - pataisymų (ang. patch) versija).
+Ši sistema intuityvi vartotojui bei naudojama daugelyje modernių priklausomybių valdymo sistemų tokių kaip PyPi, dep.
 
-% Document
-\begin{document}
+Go sistema naudoja semantinį importų versijavimą (ang. semantic import versioning). Semantiniame importų versijavime pagrindinė
+(ang. major versija) yra nurodyma pačiame priklausomybės importavimo kelyje (pavyzdžiui,
+\enquote{github.com/greta/foo/v2}), tuo tarpu antraeilė bei pataisymų versijos nurodomos įprastu būdu.
+Šis Go sistemos metodas lemia, jog vartotojai privalo būti labiau dėmesingi atnaujindami priklausomybes, nes
+norint pakeisti pagrindinę naudojamos priklausomybės versiją reikia naudoti kitą priklausomybės importavimo kelią.
 
+Maven remiasi tradiciniu semantiniu versijavimu, tačiau priklausomybės versijoje taip pat gali būti nurodoma ir
+Build Number bei Qualifier. Build Number leidžia vartotojui specifikuoti konkretų priklausomybės build, o naudojant
+Qualifier galima išbandyti ir testuoti dar oficialiai neišleistas priklausomybių versijas, pavyzdžiui, -Alpha Qualifier
+reiškia, jog priklausomybė praėjo tik baltos dėžės testavimą. Galimybė naudoti dar vystomas priklausomybių versijas yra patogus
+būdas testuoti priklausomybių kokybę ir pranešti apie trikius, tačiau tai darydamas vartotojas turi būti atidus ir
+nenaudoti šių versijų produkcinėje aplinkoje, nes šios priklausomybės nėra stabilios.
 
-
-\end{document}
+Apibendrinus, visos šios sistemos remiasi semantiniu versijavimu, tačiau taiko jį skirtingai, prioritetizuodamos skirtingus priklausomybių
+valdymo aspektus. NPM naudojama gerai žinoma tradicinė semantinio versijavimo sistema, kuri yra intuityvi vartotojams ir paprasta
+naudoti. Go sistema priklausomybės pagrindinės versijos numerį specifikuoja priklausomybės importavimo kelyje, kas lemia, jog priklausomybių
+atnaujinimas reikalauja daugiau atidumo nei NPM ar Maven sistemose. Tai yra pozityvus pokytis, nes neatsargus pagrindinės versijos atnaujinimas
+gali lengvai sukurti trikių vystomoje programų sistemoje. Maven sistema yra pranaši tuo, jog įgalina vartotoją patogiai testuoti
+vystymo fazėje esančias priklausomybes, tačiau tai kelia grėsmę, jog nestabilios priklausomybės neatsargaus vartotojo
+bus naudojamos ir produkcinėje aplinkoje.

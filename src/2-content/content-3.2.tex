@@ -2,16 +2,23 @@
 
 Maven sistemoje dažniausiai laikomasi priklausomybių semantinio versijavimo modelio -
 artefakto versiją sudaro Major Version, Minor Version, Incremental Version
-(taip pat gali būti ir Build Number, Qualifier). Toks semantinis versijavimas priklausomybių
-naudotojui leidžia susidaryti lūkesčius, kurios priklausomybės versijos yra atgaliai suderinamos,
-o kurios - ne. Semantiniame versijavime tik pagrindinės (ang. major) versijos pokyčiai reiškia atgaliai
-nesuderinami, todėl vartotojas privalo atsargiai atlikti pagrindinių versijų atnaujinimus. Semantinis versijavimas
-leidžia išvengti nestabilaus API problemos, kuri buvo matoma senojoje Go priklausomybių valdymo sistemoje \cite{ORACLEa}.
+(taip pat gali būti nurodoma ir Build Number, Qualifier). Naudojant semantinį versijavimą priklausomybių naudotojui
+lengviau susidaryti lūkesčius, kurios priklausomybės versijos yra atgaliai suderinamos, o kurios - ne. Semantiniame versijavime
+tik pagrindinės (ang. major) versijos pokyčiai reiškia atgaliai nesuderinami, todėl vartotojas privalo atsargiai
+atlikti pagrindinių versijų atnaujinimus. Semantinis versijavimas leidžia išvengti nestabilaus API problemos, kuri buvo matoma
+senojoje Go priklausomybių valdymo sistemoje \cite{ORACLEa}.
 
-Maven pom.xml faile taip pat galima nurodyti leidžiamas artefaktų versijų ribas, iš kurių bus pasirenkama tuo metu
-didžiausia. Pavyzdžiui, (,  1.0] reiškia, jog artefakto versija bus automatiškai atnaujinama be vartotojo įsikišimo
-iki 1.0 versijos, vėliau jau reikės pačio vartotojo įsikišimo. Ši sintaksė buvo labiau naudojama Maven 2, tačiau vis
-dar sutinkama ir šiomis dienomis. Galimybė turėti automatinius versijų atnaujinimus reiškia, jog bet kada gali pasikeisti
-programinio kodo surinkimo rezultatas ar įvykti klaida. Dėl šios priežasties geriau vengti automatinio versijų atnaujinimo.
-Maven 3 taip pat dėl stabilus programinio kodo surinkimo problemų atsisakė LATEST bei RELEASE artefaktų versijų \cite{LIG18}.
-%do smth about this
+Maven versijose kartais naudojami BuildNumber bei Qualifier vartotojams suteikia dar daugiau priklausomybių valdymo galimybių.
+Nurodant BuildNumber galima specifikuoti, kokį artifakto programinio kodo surinkimą (ang. build) norima naudoti, taip palengvinamas
+programų sistemos vystymo procesas \cite{ORACLEa}. Qualifier identifikatorius leidžia išbandyti dar vystymo stadijoje
+esančias priklausomybių versijas, pavyzdžiui, Alpha Qualifier nurodo, jog priklausomybės versija yra praėjusi tik baltos
+dėžės testavimą. Naudojant Qualifier patogu iš anksto testuoti vystomas priklausomybes bei pranešti apie rastus trikius.
+Vartotojas turėtų būti atidus nenaudoti priklausomybių versijų su Qualifier produkcinėse aplinkose, nes šios priklausomybės nėra
+stabilios ir gali turėti klaidų \cite{VB14}.
+
+Maven pom.xml faile galima nurodyti ir leidžiamas artefaktų versijų ribas, iš kurių bus pasirenkama tuo metu didžiausia.
+Pavyzdžiui, nurodant (,  1.0] kaip artifakto versiją, artifakto versija bus atnaujinama be vartotojo įsikišimo iki 1.0 versijos,
+vėliau reikės pačio vartotojo įsikišimo. Ši sintaksė buvo plačiau naudojama Maven 2, tačiau vis dar sutinkama ir šiomis dienomis.
+Galimybė turėti automatinius versijų atnaujinimus reiškia, jog bet kada gali pasikeisti programinio kodo surinkimo rezultatas ar
+įvykti klaida. Dėl šios priežasties geriau vengti automatinio versijų atnaujinimo. Maven 3 taip pat dėl stabilus programinio kodo
+surinkimo problemų atsisakė LATEST bei RELEASE artefaktų versijų \cite{LIG18}.

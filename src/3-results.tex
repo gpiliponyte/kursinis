@@ -1,3 +1,55 @@
 \sectionnonum{Rezultatai ir išvados}
 
-Čia bus rezultatai
+%Rezultatai ir išvados turėtų būti sarašų pavidalu. Rezultatai ką jūs padarėte (pvz. išanalizuotos
+%trys priklausomybių valdymo sistemos). Išvados ką iš to supratote/pastebėjote (pvz. nagrinėtos
+%sistemos skirtingai realizuoja stabilų priklausomybių versijų užtikrinimą).
+%Taigi žemiau esantis tekstą paverskite į du numeruotus sąrašus.
+
+Darbo rezultatai:
+
+
+\begin{enumerate}
+    \item Išanalizuotos trys priklausomybių valdymo sistemos.
+    \item Aptartos sistemos palygintos pagal tris priklausomybių valdymo savybes.
+\end{enumerate}
+
+
+\vspace*{\baselineskip}
+
+
+Darbo išvados:
+
+
+\begin{enumerate}
+    \item Nagrinėtos sistemos naudoja skirtingus priklausomybių versijų parinkimo algoritmus.
+    \item Viena iš aptartų sistemų neturi patikimo mechanizmo stabilioms priklausomybių versijoms užtikrinti, kitos analizuotos sistemos šią funkciją atlieka skirtingais būdais.
+    \item Visos aptartos sistemos naudoja panašius priklausomybių versijavimo metodus.
+\end{enumerate}
+
+%Go bei NPM sistemos skirtingai būdais užtikrina stabilias priklausomybių versijas, tuo tarpu Maven sistema neturi tvirtų stabilių priklausomybių versijų užtikrinimo mechanizmų
+%visos iš aptartų sistemų versijuojant priklausomybes remiasi semantiniu versijavimu
+%
+%
+%Analizuojuotos sistemos turi ryškių skirtumų, toms pačioms priklausomybių valdymo problemoms spręsti dažnai naudojami skirtingi metodai.
+%
+%Viena iš svarbiausių priklausomybių valdymo funkcijų - priklausomybių versijų pasirinkimas, aprašytose sistemose yra įgyvendinta labai skirtingai.
+%Naujojoje Go sistemoje prioritetizuojant siunčiamų priklausomybių versijų nuspėjamumą naudojamas \enquote{minimal version selection} algoritmas,
+%kurio metu pasirenkama seniausia galima priklausomybės versija. NPM, priešingai nei Go, naudojamos naujausios galimos priklausomybių versijos,
+%siekiant užtikrinti naujausių priklausomybių gavimą. Maven numatytasis algoritmas tranzityvių priklausomybių versijoms gauti yra naudoti
+%pirmąją priklausomybių medyje esančią priklausomybės versiją - nenuspėjamas ir nesaugus algoritmas, ir nors Maven siūlo kitas strategijas
+%tranzityvių priklausomybių versijoms gauti, Maven šiame priklausomybių valdymo aspekte mažiau pranaši už GO ir NPM sistemas.
+%
+%Go, NPM ir Maven sistemos taip pat skiriasi ir tuo, kaip atlieka stalių priklausomybių versijų užtikrinimą. Go priklausomybių stabilumas
+%užtikrinamas visada pasirenkant seniausias galimas priklausomybių versijas - tai saugus sprendimas, kadangi šios versijos nekinta
+%vartotojui neatnaujinant tiesioginių priklausomybių. NPM naudoja visiškai kitą, tačiau taip pat saugų priklausomybių versijų užtikrinimo
+%algoritmą - priklausomybių rakinimą, kuomet visas priklausomybių medis yra nurodomas projekto lock faile, kuris toliau naudojamas
+%pakartotinai gauti reikiamas priklausomybes. Maven neturi įtaisytų tvirtų mechanizmų užtikrinti stabilias priklausomybių versijas,
+%šiuo funkcionalumu dar kartą nusileidžia Go ir NPM.
+%
+%Aptartos priklausomybių valdymo sistemos remiasi semantiniu versijavimu priklausomybių versijoms nurodyti, tačiau kiekvienos iš
+%šių sistemų versijavimo taisyklės turi išskirtinių bruožų. Go sistema naudoja semantinį importų versijavimą (ang. semantic import versioning),
+%kuomet pagrindinė versija perkeliama į priklausomybės importavimo kelią, NPM naudoja tradicinį semantinį versijavimą, kuris daugeliui
+%vartotojų yra gerai pažįstamas. Maven priklausomybės versijoms nurodyti naudojamas semantinis versijavimas, tačiau taip pat galima nurodyti
+%BuildNumber bei Qualifier, padedančius valdyti vystymo stadijoje esančias priklausomybes. Šiuo aspektu aiškių lyderių tarp aptartų sistemų
+%lyderių nėra, kiekviena iš aptartų sistemų turi savų privalumų.
+

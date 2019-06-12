@@ -1,0 +1,27 @@
+\subsection{Aptartų priklausomybių valdymo sistemų apibendrinimas}
+
+%[Gal būtų galima pridėti tekstą šiame skyriuje apibendrinančią lentelę? T.y. apibendrintą glaustą, palyginimą]
+
+\begin{longtable}{| p{.20\textwidth} | p{.20\textwidth} | p{.20\textwidth} | p{.30\textwidth}|}
+    \caption{Aptartų priklausomybių valdymo sistemų savybių palyginimas} \label{tab:expirement-table-results}\\ \hline
+     & \textbf{Go} & \textbf{NPM} & \textbf{Maven}  \\ \hline
+
+    %priklausomybiu versiju parinkimas
+    \textbf{Priklausomybių versijų parinkimas}
+    & Naudojama seniausia leidžiama priklausomybės versija.
+    & Prieš sukuriant package-lock.json failą, renkamasi naujausia leidžiama versija, vėliau renkamasi pagal package-lock.json faile nurodytas versijas.
+    & Priklausomybių valdymo mechanizmas parenka naujausią versiją iš vartotojo nurodytų leistinų priklausomybės versijų, priklausomybių mediacija
+    renkasi aukščiausiai priklausomybių medyje esančią priklausomybę. \\ \hline
+
+    %Stabilių priklausomybių versijų užtikrinimas
+    \textbf{Stabilių priklausomybių versijų užtikrinimas}
+    & Naudojama seniausia leidžiama priklausomybės versija.
+    & Priklausomybių rakinimas naudojant package-lock.json failą.
+    & Nėra tvirtų mechanizmų leidžiančių užtikrinti stabilias versijas. \\ \hline
+
+    %versijavimas
+    \textbf{Priklausomybių versijavimas}
+    & Semantinis importų versijavimas.
+    & Semantinis versijavimas.
+    & Semantinis versijavimas, papildomai galima pridėti Build Number bei Qualifier. \\ \hline
+\end{longtable}

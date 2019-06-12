@@ -1,11 +1,16 @@
-\subsection{Nagrinėti pasirinktos priklausomybių sistemos}
+\subsection{Darbe lyginamos pasirinktų sistemų savybės}
 
-Šiuo metu yra sukurta dešimtys skirtingų priklausomybių valdymo sistemų. Tolesniuose skyriuose bus nagrinėjamos
-Go, NPM bei Maven sistemos. Šios sistemos pasirinktos dėl kelių priežasčių. NPM turi didžiausią priklausomybių
-registrą iš visų priklausomybių valdymo sistemų ir yra vienas dominuojančių įrankių front-end sistemose. Tuo tarpu
-Go priklausomybių valdymo mechanizmas įdomus sistemos pertvarkymo metu priimtais unikaliais, iki šiol nenaudotais
-priklausomybių valdymo problemų sprendimais. Maven sistema yra šiek tiek senesnė nei Go ar NPM (išleista 2002 metais),
-tačiau siūlo daug mechanizmų efektyviau valdyti priklausomybes \cite{PAD17}. Kiekviena iš pasirinktų sistemų turi savitų priklausomybių
-valdymo metodų, pavyzdžiui, visos trys iš šių sistemų turi skirtingus algoritmus tranzityvių priklausomybių versijoms gauti.
-Svarbus faktorius renkantis sistemas buvo ir tai, jog kiekviena iš minėtų sistemų yra aktyviai naudojama ir šiomis dienomis.
-Taigi, visos trys sistemos yra vis dar aktualios ir turi savų ypatumų, leidžiančių juos palyginti kursinio darbo eigoje.
+Darbe aptariamos priklausomybių valdymo sistemos (Go, NPM, Maven) bus lyginamos pagal šias priklausomybių valdymo savybes:
+\begin{itemize}
+    \item priklausomybių versijų parinkimo algoritmus;
+    \item priklausomybių versijų stabilumo užtikrinimo mechanizmus;
+    \item priklausomybių versijavimo taisykles.
+\end{itemize}
+
+Pirmoji savybė, priklausomybių versijų parinkimas, pasirinkta dėl savo kritiškumo priklausomybių valdymo procese, suprantant, jog neteisingas priklausomybių versijų pasirinkimas gali sukelti vystomos programų sistemos trikius ar net visišką neveikimą. Ši savybė taip pat įdomi, nes skirtingi priklausomybių versijų parinkimo algoritmai gali teikti pirmumą skirtingiems priklausomybių valdymo aspektams, tokiems kaip naudojamų priklausomybių naujumas ar stabilumas - šios savybės analizės metu atsispindės ir nagrinėjamos sistemos prioritetai.
+
+Priklausomybių versijų stabilumo užtikrinimas yra dar viena kritinė priklausomybių valdymo funkcija. Ši savybė reikalinga užtikrinti programų sistemos stabilumą skirtingose aplinkose - sistemos produkcinę aplinką turi pasiekti būtent tų versijų priklausomybės, su kuriomis buvo vystoma ir testuojama sistema, kitu atveju gali įvykti netikėtos klaidos. Priklausomybių stabilumo užtikrinimas tampa vis svarbesnis, nes vis daugiau vystytojų naudoja automatinius kodo integravimo ir diegimo įrankius.
+
+Paskutinė savybė, priklausomybių versijavimas, yra pagrindinis būdas priklausomybės autoriui komunikuoti su vartotoju, suteikti informaciją apie tokius priklausomybės aspektus kaip stabilumas bei pokyčiai nuo prieš tai buvusių versijų. Priklausomybių versijavimo savybė nagrinėti pasirinkta norint palyginti, kaip ir kokią informaciją nagrinėtos sistemos perteikia per versijų numerius bei kaip jie standartizuojami.
+
+
